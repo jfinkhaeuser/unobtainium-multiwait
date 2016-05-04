@@ -1,0 +1,81 @@
+PATH
+  remote: .
+  specs:
+    unobtainium-multiwait (0.1.0)
+      unobtainium (~> 0.5)
+      unobtainium-multifind (~> 0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ast (2.2.0)
+    childprocess (0.5.9)
+      ffi (~> 1.0, >= 1.0.11)
+    codeclimate-test-reporter (0.5.0)
+      simplecov (>= 0.7.1, < 1.0.0)
+    diff-lcs (1.2.5)
+    docile (1.1.5)
+    ffi (1.9.10)
+    json (1.8.3)
+    parser (2.3.1.0)
+      ast (~> 2.2)
+    phantomjs (2.1.1.0)
+    powerpack (0.1.1)
+    rainbow (2.1.0)
+    rake (11.1.2)
+    rspec (3.4.0)
+      rspec-core (~> 3.4.0)
+      rspec-expectations (~> 3.4.0)
+      rspec-mocks (~> 3.4.0)
+    rspec-core (3.4.4)
+      rspec-support (~> 3.4.0)
+    rspec-expectations (3.4.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-mocks (3.4.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-support (3.4.1)
+    rubocop (0.39.0)
+      parser (>= 2.3.0.7, < 3.0)
+      powerpack (~> 0.1)
+      rainbow (>= 1.99.1, < 3.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (~> 1.0, >= 1.0.1)
+    ruby-progressbar (1.8.0)
+    rubyzip (1.2.0)
+    selenium-webdriver (2.53.0)
+      childprocess (~> 0.5)
+      rubyzip (~> 1.0)
+      websocket (~> 1.0)
+    simplecov (0.11.2)
+      docile (~> 1.1.0)
+      json (~> 1.8)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.0)
+    sys-proctable (1.0.0)
+    unicode-display_width (1.0.5)
+    unobtainium (0.5.0)
+      sys-proctable (~> 1.0)
+    unobtainium-multifind (0.1.0)
+      unobtainium (~> 0.5)
+    websocket (1.2.3)
+    yard (0.8.7.6)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.12)
+  codeclimate-test-reporter
+  phantomjs
+  rake (~> 11.1)
+  rspec (~> 3.4)
+  rubocop (~> 0.39)
+  selenium-webdriver
+  simplecov (~> 0.11)
+  unobtainium-multiwait!
+  yard (~> 0.8)
+
+BUNDLED WITH
+   1.12.1
