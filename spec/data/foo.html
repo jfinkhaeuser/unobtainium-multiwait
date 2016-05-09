@@ -1,0 +1,15 @@
+<foo>
+  <bar>
+    <something>else</something></bar>
+  <hidden style="display: none"></hidden>
+  <appears id="appears" style="display: none">boo!</appears>
+  <appears-too-late id="late" style="display: none">aah!</appears-too-late>
+  <script>
+    setTimeout(function() {
+      document.getElementById("appears").style.display = "block";
+    }, 3000);
+    setTimeout(function() {
+      document.getElementById("late").style.display = "block";
+    }, 12000);
+  </script>
+<foo>
