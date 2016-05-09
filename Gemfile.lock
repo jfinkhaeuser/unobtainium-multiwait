@@ -3,7 +3,7 @@ PATH
   specs:
     unobtainium-multiwait (0.1.0)
       unobtainium (~> 0.5)
-      unobtainium-multifind (~> 0.1)
+      unobtainium-multifind (~> 0.2)
 
 GEM
   remote: https://rubygems.org/
@@ -57,7 +57,7 @@ GEM
     unicode-display_width (1.0.5)
     unobtainium (0.5.0)
       sys-proctable (~> 1.0)
-    unobtainium-multifind (0.1.0)
+    unobtainium-multifind (0.2.0)
       unobtainium (~> 0.5)
     websocket (1.2.3)
     yard (0.8.7.6)

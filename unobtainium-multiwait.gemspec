@@ -50,7 +50,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "phantomjs"
 
   spec.add_dependency "unobtainium", "~> 0.5"
-  spec.add_dependency "unobtainium-multifind", "~> 0.1"
+  spec.add_dependency "unobtainium-multifind", "~> 0.2"
 end
 # rubocop:enable Style/SpaceAroundOperators
 # rubocop:enable Style/UnneededPercentQ, Style/ExtraSpacing
