@@ -162,7 +162,8 @@ describe 'Unobtainium::MultiWait::DriverModule' do
       expect(elems[0]).not_to be_nil
       expect(elems[1]).not_to be_nil
       is_error = elems[0].is_a?(
-       ::Selenium::WebDriver::Error::TimeOutError)
+        ::Selenium::WebDriver::Error::TimeOutError
+      )
       expect(is_error).to be_truthy
     end
 

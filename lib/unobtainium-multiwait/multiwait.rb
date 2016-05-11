@@ -33,6 +33,10 @@ module Unobtainium
         # that Selenium::WebDriver::Element responds to, or :exists? if you only
         # care whether the element exists.
         check_element: :displayed?,
+        # The default method to perform the actual find is :find_element, but
+        # you can override this here. The most sensible case would be to use
+        # :find_elements instead, of course.
+        find_method: :find_element,
         # The default wait timeout in seconds.
         timeout: 10,
       }.freeze
@@ -53,12 +57,11 @@ module Unobtainium
 
       ##
       # Wait for multiple elements. Each argument is a Hash of selector options
-      # that are passed to #find_element. If one argument contains keys from
-      # the DEFAULT_OPTIONS Hash, it is instead treated as an options Hash for
-      # the #multiwait method.
+      # that are passed to options[:find_method]. If one argument contains keys
+      # from the DEFAULT_OPTIONS Hash, it is instead treated as an options Hash
+      # for the #multiwait method.
       # @return Array of found elements or nil entries if no matching element
       #   was found.
-      #   FIXME: recheck this!
       def multiwait(*args)
         # Parse options
         options, selectors = multiwait_parse_options(*args)
@@ -68,6 +71,7 @@ module Unobtainium
           raise_on_error: options[:raise_on_error],
           return_errors: options[:return_error],
           check_element: options[:check_element],
+          find_method: options[:find_method],
         }
 
         # Wait for elements
@@ -183,4 +187,5 @@ end # module Unobtainium
 
 ::Unobtainium::Driver.register_module(
     ::Unobtainium::MultiWait::DriverModule,
-    __FILE__)
+    __FILE__
+)
