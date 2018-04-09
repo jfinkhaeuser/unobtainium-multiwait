@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    unobtainium-multiwait (0.2.0)
+    unobtainium-multiwait (0.3.0)
       unobtainium (~> 0.13)
       unobtainium-multifind (~> 0.4)
 
