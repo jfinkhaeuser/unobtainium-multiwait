@@ -5,8 +5,6 @@ allowing for more easily finding (one of) multiple elements.
 
 [![Gem Version](https://badge.fury.io/rb/unobtainium-multiwait.svg)](https://badge.fury.io/rb/unobtainium-multiwait)
 [![Build status](https://travis-ci.org/jfinkhaeuser/unobtainium-multiwait.svg?branch=master)](https://travis-ci.org/jfinkhaeuser/unobtainium-multiwait)
-[![Code Climate](https://codeclimate.com/github/jfinkhaeuser/unobtainium-multiwait/badges/gpa.svg)](https://codeclimate.com/github/jfinkhaeuser/unobtainium-multiwait)
-[![Test Coverage](https://codeclimate.com/github/jfinkhaeuser/unobtainium-multiwait/badges/coverage.svg)](https://codeclimate.com/github/jfinkhaeuser/unobtainium-multiwait/coverage)
 
 To use it, require it after requiring unobtainium, then create the any driver
 with a Selenium API:
